@@ -64,11 +64,11 @@ const getURL = (org, env) => {
     try {
         switch (org) {
 
-            case 'ml_corp':
-                return `https://ml_corp-${env}.apigee.net/oauth/client_credential/accesstoken?grant_type=client_credentials`
+            case 'host_1':
+                return `https://host_1-${env}.apigee.net/oauth/client_credential/accesstoken?grant_type=client_credentials`
 
-            case 'magazineluiza':
-                return `https://${(env == `prod` ? env = `api` : env = env)}.apiluiza.com.br/oauth/client_credential/accesstoken?grant_type=client_credentials`
+            case 'host_2':
+                return `https://${(env == `prod` ? env = `api` : env = env)}.apigee.com.br/oauth/client_credential/accesstoken?grant_type=client_credentials`
 
             default:
                 return ``
